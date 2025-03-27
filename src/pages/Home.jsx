@@ -16,11 +16,6 @@ const Home = () => {
     setIsModalOpen(true);
   };
 
-  const handleAddProduct = (product) => {
-    // Add product to the API
-    // setIsModalOpen(false); // Close the modal after adding a product
-  };
-
   return (
     <>
       <Button
@@ -32,7 +27,7 @@ const Home = () => {
         fullWidth={false}
       />
 
-      <div class="card-container">
+      <div className="card-container">
         {data.map((product) => (
           <ProductCard product={product} />
         ))}
@@ -41,7 +36,6 @@ const Home = () => {
       <ProductModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        onAddProduct={handleAddProduct}
       />
     </>
   );

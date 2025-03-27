@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 const Input = ({
   type = "text",
   placeholder = "Enter text",
+  name = "",
   value,
   onChange,
   disabled = false,
@@ -18,6 +19,7 @@ const Input = ({
       <input
         type={type}
         placeholder={placeholder}
+        name={name}
         value={value}
         onChange={onChange}
         disabled={disabled}
@@ -32,6 +34,7 @@ const Input = ({
 Input.propTypes = {
   type: PropTypes.string,
   placeholder: PropTypes.string,
+  name: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
