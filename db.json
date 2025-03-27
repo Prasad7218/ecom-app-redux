@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Earbuds",
+      "image": "https://m.media-amazon.com/images/I/71FvvlyAMJL.jpg",
+      "price": 49.99,
+      "description": "High-quality wireless earbuds with noise cancellation and 20-hour battery life."
+    },
+    {
+      "id": 2,
+      "name": "Smartwatch Pro",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510873_sd.jpg",
+      "price": 149.99,
+      "description": "Feature-rich smartwatch with heart rate monitoring, GPS, and water resistance."
+    },
+    {
+      "id": 3,
+      "name": "Gaming Laptop",
+      "image": "https://m.media-amazon.com/images/I/71iyBsDDwQL._AC_UF1000,1000_QL80_.jpg",
+      "price": 1299.99,
+      "description": "Powerful gaming laptop with Intel i7, 16GB RAM, and RTX 3060 graphics card."
+    },
+    {
+      "id": 4,
+      "name": "Ergonomic Office Chair",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS314j1YXWNo5edB-W3-sFBQXjp3CkF7-Oyvg&s",
+      "price": 199.99,
+      "description": "Comfortable ergonomic chair with lumbar support and adjustable height."
+    },
+    {
+      "id": 5,
+      "name": "Smart LED TV 55”",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfnh1Xt4PcwhkGXzLOziv9gELExwwHDVSEfA&s",
+      "price": 599.99,
+      "description": "4K Ultra HD Smart TV with built-in streaming apps and voice control."
+    },
+    {
+      "id": 6,
+      "name": "Wireless Mechanical Keyboard",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425357_rd.jpg",
+      "price": 89.99,
+      "description": "RGB backlit wireless mechanical keyboard with customizable keys."
+    },
+    {
+      "id": 7,
+      "name": "Noise Cancelling Headphones",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/kpinwy80/headphone/r/1/q/mwp22hn-a-apple-original-imag3qe9eqkfhmg8.jpeg?q=20&crop=false",
+      "price": 199.99,
+      "description": "Premium over-ear headphones with active noise cancellation and 30-hour battery life."
+    },
+    {
+      "id": 8,
+      "name": "Smart Home Security Camera",
+      "image": "https://m.media-amazon.com/images/I/71l8tpYhxdL.jpg",
+      "price": 79.99,
+      "description": "1080p HD security camera with motion detection and night vision."
+    },
+    {
+      "id": 9,
+      "name": "Electric Standing Desk",
+      "image": "https://m.media-amazon.com/images/I/71ARqBJvP2L.jpg",
+      "price": 349.99,
+      "description": "Adjustable electric standing desk with memory height presets."
+    },
+    {
+      "id": 10,
+      "name": "Portable Espresso Machine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqCOyWvaBH6AeRMK6IraVneWdFVMsEGhxWUQ&s",
+      "price": 59.99,
+      "description": "Compact and portable espresso machine for coffee lovers on the go."
+    }
+  ],
+  "posts": [
+    { "id": 1, "title": "Hello World", "userId": 1 },
+    { "id": 2, "title": "JSON Server is awesome!", "userId": 2 }
+  ]
+}
