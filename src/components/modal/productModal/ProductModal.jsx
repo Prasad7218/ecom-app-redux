@@ -1,27 +1,49 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./ProductModal.css";
 import Input from "../../input/Input";
-import { useAddProductMutation } from "../../../redux/apiSlices/productsApiSlice";
+import {
+  useAddProductMutation,
+  useUpdateProductMutation,
+} from "../../../redux/apiSlices/productsApiSlice";
 
-const ProductModal = ({ isOpen, onClose }) => {
+const ProductModal = ({ isOpen, onClose, productToEdit }) => {
   const [product, setProduct] = useState({
     name: "",
     image: "",
     price: "",
     description: "",
   });
-  const [text, setText] = useState("");
+  //   const [text, setText] = useState("");
   const [error, setError] = useState("");
   const [addProduct] = useAddProductMutation();
+  const [updateProduct] = useUpdateProductMutation();
+
+  useEffect(() => {
+    if (productToEdit) {
+      setProduct(productToEdit);
+    } else {
+      setProduct({ name: "", image: "", price: "", description: "" });
+    }
+  }, [productToEdit]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProduct({ ...product, [name]: value });
   };
+
   const onAddProduct = async (product) => {
     try {
-      const response = await addProduct(product).unwrap();
-      console.log("Product added successfully:", response);
+      if (productToEdit) {
+        // Update existing product
+        await updateProduct({ id: productToEdit.id, ...product }).unwrap();
+        console.log("Product updated successfully:", product);
+      } else {
+        // Add new product
+        await addProduct(product).unwrap();
+        console.log("Product added successfully:", product);
+      }
+      //   const response = await addProduct(product).unwrap();
+      //   console.log("Product added successfully:", response);
       onClose();
     } catch (err) {
       console.error("Error adding product:", err);
@@ -70,7 +92,9 @@ const ProductModal = ({ isOpen, onClose }) => {
           error={error}
           size="large"
         />
-        <button onClick={() => onAddProduct(product)}>Add Product</button>
+        <button onClick={() => onAddProduct(product)}>
+          {productToEdit ? "Update Product" : "Add Product"}
+        </button>
         <button onClick={onClose} className="close-button">
           ✖
         </button>
