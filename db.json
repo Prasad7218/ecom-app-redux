@@ -8,11 +8,11 @@
       "id": "1"
     },
     {
-      "id": "3",
       "name": "Gaming Laptop",
       "image": "https://m.media-amazon.com/images/I/71iyBsDDwQL._AC_UF1000,1000_QL80_.jpg",
-      "price": 1299.99,
-      "description": "Powerful gaming laptop with Intel i7, 16GB RAM, and RTX 3060 graphics card."
+      "price": "1300",
+      "description": "Powerful gaming laptop with Intel i7, 16GB RAM, and RTX 3060 graphics card.",
+      "id": "3"
     },
     {
       "id": "4",
@@ -22,11 +22,11 @@
       "description": "Comfortable ergonomic chair with lumbar support and adjustable height."
     },
     {
-      "id": "5",
       "name": "Smart LED TV 55”",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfnh1Xt4PcwhkGXzLOziv9gELExwwHDVSEfA&s",
-      "price": 599.99,
-      "description": "4K Ultra HD Smart TV with built-in streaming apps and voice control."
+      "price": "599",
+      "description": "4K Ultra HD Smart TV with built-in streaming apps and voice control.",
+      "id": "5"
     },
     {
       "id": "6",
@@ -36,11 +36,11 @@
       "description": "RGB backlit wireless mechanical keyboard with customizable keys."
     },
     {
-      "id": "7",
       "name": "Noise Cancelling Headphones",
       "image": "https://rukminim2.flixcart.com/image/850/1000/kpinwy80/headphone/r/1/q/mwp22hn-a-apple-original-imag3qe9eqkfhmg8.jpeg?q=20&crop=false",
-      "price": 199.99,
-      "description": "Premium over-ear headphones with active noise cancellation and 30-hour battery life."
+      "price": "200",
+      "description": "Premium over-ear headphones with active noise cancellation and 30-hour battery life.",
+      "id": "7"
     },
     {
       "id": "8",
@@ -64,25 +64,11 @@
       "description": "Compact and portable espresso machine for coffee lovers on the go."
     },
     {
-      "id": "0166",
       "name": "Water Bottle",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTETS4WpneK09wc7yIXN_GFTlbE9OjvL8PFwQ&s",
-      "price": "500",
-      "description": "Water bottle for drinking water"
-    },
-    {
-      "id": "87b6",
-      "name": "Keychain",
-      "image": "https://www.giftoo.in/cdn/shop/files/IMAGEYE_3_copy.png?v=1739798471",
-      "price": "80",
-      "description": "keychain for keys"
-    },
-    {
-      "id": "274f",
-      "name": "Teddy Bear",
-      "image": "https://m.media-amazon.com/images/I/41XgdHttb8L._AC_UF1000,1000_QL80_.jpg",
-      "price": "800",
-      "description": "Teddy bear for kids to play"
+      "price": "5000",
+      "description": "Water bottle for drinking water",
+      "id": "0166"
     }
   ],
   "posts": [

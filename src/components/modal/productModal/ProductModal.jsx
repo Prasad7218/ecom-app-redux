@@ -13,9 +13,16 @@ const ProductModal = ({ isOpen, onClose, productToEdit }) => {
     price: "",
     description: "",
   });
-  //   const [text, setText] = useState("");
   const [error, setError] = useState("");
-  const [addProduct] = useAddProductMutation();
+  // const [
+  //   addProduct,
+  //   ,
+  //   { isLoading, isError, error: addProductError, isSuccess, data },
+  // ] = useAddProductMutation();
+  const [
+    addProduct,
+    { isLoading, isError, error: addProductError, isSuccess },
+  ] = useAddProductMutation();
   const [updateProduct] = useUpdateProductMutation();
 
   useEffect(() => {
@@ -34,16 +41,12 @@ const ProductModal = ({ isOpen, onClose, productToEdit }) => {
   const onAddProduct = async (product) => {
     try {
       if (productToEdit) {
-        // Update existing product
         await updateProduct({ id: productToEdit.id, ...product }).unwrap();
         console.log("Product updated successfully:", product);
       } else {
-        // Add new product
         await addProduct(product).unwrap();
         console.log("Product added successfully:", product);
       }
-      //   const response = await addProduct(product).unwrap();
-      //   console.log("Product added successfully:", response);
       onClose();
     } catch (err) {
       console.error("Error adding product:", err);
@@ -55,7 +58,7 @@ const ProductModal = ({ isOpen, onClose, productToEdit }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h2>Add Product</h2>
+        <h2>{isLoading ? "Adding..." : "Add Product"}</h2>
         <Input
           type="text"
           placeholder="Enter Product name"
@@ -85,7 +88,7 @@ const ProductModal = ({ isOpen, onClose, productToEdit }) => {
         />
         <Input
           type="text"
-          placeholder="Enter Product name"
+          placeholder="Enter Product description"
           name="description"
           value={product.description || ""}
           onChange={handleChange}
@@ -99,6 +102,11 @@ const ProductModal = ({ isOpen, onClose, productToEdit }) => {
           ✖
         </button>
       </div>
+      {isError && (
+        <p>Error: {addProductError?.data?.message || "Something went wrong"}</p>
+      )}
+
+      {isSuccess && <p>Product added successfully!</p>}
     </div>
   );
 };
