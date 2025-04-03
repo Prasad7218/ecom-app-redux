@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "name": "Wireless Bluetooth Earbuds",
+      "name": "Wireless Bluetooth Earbuds m-11",
       "image": "https://m.media-amazon.com/images/I/71FvvlyAMJL.jpg",
-      "price": "700",
+      "price": "70",
       "description": "High-quality wireless earbuds with noise cancellation and 20-hour battery life.",
       "id": "1"
     },
