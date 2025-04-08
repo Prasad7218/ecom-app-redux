@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 // import { lazy, Suspense } from "react";
 import { useGetProductsQuery } from "../redux/apiSlices/productsApiSlice";
 import ProductCard from "../components/card/ProductCard";
@@ -12,6 +12,7 @@ import Input from "../components/input/Input";
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { data, error, isLoading } = useGetProductsQuery();
+  // const [isReady, setIsReady] = useState(false);
   const dispatch = useDispatch();
   // const [getProducts, { data, error, isLoading }] = useLazyGetProductsQuery();
   const totalProducts = useMemo(() => {
@@ -44,6 +45,16 @@ const Home = () => {
     console.log("Inside Callback Hook");
     setIsModalOpen(true);
   }, []);
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsReady(true);
+  //   }, 3000);
+
+  //   return () => clearTimeout(timer);
+  // }, []);
+
+  // if (!isReady) return <p>Delaying render for profiling...</p>;
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error fetching posts</p>;

@@ -15,11 +15,11 @@
       "id": "3"
     },
     {
-      "id": "4",
       "name": "Ergonomic Office Chair",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS314j1YXWNo5edB-W3-sFBQXjp3CkF7-Oyvg&s",
-      "price": 199.99,
-      "description": "Comfortable ergonomic chair with lumbar support and adjustable height."
+      "price": "200",
+      "description": "Comfortable ergonomic chair with lumbar support and adjustable height.",
+      "id": "4"
     },
     {
       "name": "Smart LED TV 55”",
@@ -29,11 +29,11 @@
       "id": "5"
     },
     {
-      "id": "6",
       "name": "Wireless Mechanical Keyboard",
       "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425357_rd.jpg",
-      "price": 89.99,
-      "description": "RGB backlit wireless mechanical keyboard with customizable keys."
+      "price": "100",
+      "description": "RGB backlit wireless mechanical keyboard with customizable keys.",
+      "id": "6"
     },
     {
       "name": "Noise Cancelling Headphones",
@@ -43,25 +43,25 @@
       "id": "7"
     },
     {
-      "id": "8",
       "name": "Smart Home Security Camera",
       "image": "https://m.media-amazon.com/images/I/71l8tpYhxdL.jpg",
-      "price": 79.99,
-      "description": "1080p HD security camera with motion detection and night vision."
+      "price": "80",
+      "description": "1080p HD security camera with motion detection and night vision.",
+      "id": "8"
     },
     {
-      "id": "9",
       "name": "Electric Standing Desk",
       "image": "https://m.media-amazon.com/images/I/71ARqBJvP2L.jpg",
-      "price": 349.99,
-      "description": "Adjustable electric standing desk with memory height presets."
+      "price": "350",
+      "description": "Adjustable electric standing desk with memory height presets.",
+      "id": "9"
     },
     {
-      "id": "10",
       "name": "Portable Espresso Machine",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqCOyWvaBH6AeRMK6IraVneWdFVMsEGhxWUQ&s",
-      "price": 59.99,
-      "description": "Compact and portable espresso machine for coffee lovers on the go."
+      "price": "80",
+      "description": "Compact and portable espresso machine for coffee lovers on the go.",
+      "id": "10"
     },
     {
       "name": "Water Bottle",
